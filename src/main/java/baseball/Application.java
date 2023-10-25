@@ -22,7 +22,7 @@ public class Application {
         boolean isCondition = true;
         while (true) {
             int[] computerNumbers = generateRandomNumbers();
-            System.out.print("서로 다른 3자리의 수를 입력하세요: ");
+            System.out.print("숫자를 입력해주세요 : ");
             int[] userNumbers = getUserInput();
             int strikes = 0;
             int balls = 0;
@@ -51,7 +51,7 @@ public class Application {
             }
 
             //게임을 한번 플레이 한 후 바로 결과값 알려주고 바로 나오는 문구
-            System.out.print("게임을 계속하려면 1, 종료하려면 2를 입력하세요: ");
+            System.out.print("게임을 새로 시작하려면 1, 종료하려면 2를 입력하세요.");
             int choice = Integer.parseInt(Console.readLine());
 
             if (choice != 1 && choice != 2) {
